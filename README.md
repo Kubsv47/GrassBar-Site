@@ -50,6 +50,3 @@ Responsywny serwis (mobile-first) dla sports pubu z:
 ### 1) Wymagania
 - Node.js 18+
 - Konto Firebase
-
-### 2) Klucze środowiskowe
-Utwórz `.env` na podstawie `.env.example` i uzupełnij wartości:
