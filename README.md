@@ -8,8 +8,7 @@ Responsywny serwis (mobile-first) dla sports pubu z:
 - banerem zgody na cookies (z ustawieniami i integracją GA po zgodzie),
 - nawigacją sticky z poprawnym a11y (aria-expanded, backdrop na mobile).
 
-## Demo / Zrzuty
-- [video/gif/screenshot.png] – podlinkuj, jeśli hostujesz
+## Demo
 - Live: (opcjonalnie) https://twoja-domena
 
 ---
