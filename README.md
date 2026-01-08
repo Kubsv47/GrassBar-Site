@@ -9,7 +9,7 @@ Responsywny serwis (mobile-first) dla sports pubu z:
 - nawigacją sticky z poprawnym a11y (aria-expanded, backdrop na mobile).
 
 ## Demo
-- Live: (opcjonalnie) https://twoja-domena
+- Live: https://grassbar.netlify.app/
 
 ---
 
