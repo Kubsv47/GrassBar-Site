@@ -1,0 +1,236 @@
+
+/* Płynne przewijanie */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Wysokość sticky nav (mobile-first) */
+:root {
+  --nav-offset-mobile: 72px;   /* dopasuj do realnej wysokości nav */
+  --nav-offset-desktop: 88px;  /* nieco większy na desktopie */
+}
+
+/* Offset dla przewijania do kotwic (hash #...) */
+html {
+  scroll-padding-top: var(--nav-offset-mobile);
+}
+section[id] {
+  scroll-margin-top: var(--nav-offset-mobile);
+}
+
+:root {
+	--dark-green: #1A472A;
+	--light-cream: #E6E5D3;
+	--text-cream: #F0F0E1;
+	--lucky-yellow: #FDD835;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	background-color: var(--light-cream);
+	min-height: 100vh;
+}
+
+.hero-section-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* === POPRAWKA DLA TYTUŁÓW SEKCJI === */
+.section-title {
+	text-align: center;
+    font-size: 2.2rem; /* Domyślny, czytelny rozmiar na mobile */
+    font-family: 'Anton', sans-serif;
+	letter-spacing: 1.5px;
+	color: var(--dark-green);
+}
+
+/* --- Style Mobile-First --- */
+
+.hero-title {
+	font-family: 'Anton', sans-serif;
+	font-size: 4rem; 
+	line-height: 1.1;
+	text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2);
+	margin: 0;
+}
+
+.hero-subtitle {
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-top: 1.5rem;
+	font-size: 1rem;
+}
+
+.hero-tagline {
+	color: #a7d7b9;
+	letter-spacing: 1.5px;
+	margin-top: 0.5rem;
+	margin-bottom: 2.5rem;
+	font-size: 1.2rem;
+}
+
+.btn-custom {
+	background-color: var(--light-cream);
+	color: var(--dark-green);
+	padding: 0.8rem 1.8rem;
+	border-radius: 25px;
+	text-decoration: none;
+	font-weight: 700;
+	box-shadow: 3px 3px 8px rgba(0,0,0,0.4);
+	transition: transform 0.2s, box-shadow 0.2s;
+	border: 3px solid #d4d3c2;
+}
+
+.btn-custom:hover {
+	transform: translateY(-3px);
+	box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
+    color: var(--dark-green);
+}
+
+.image-frame-container {
+    position: relative;
+}
+
+.image-frame {
+	border: 15px solid var(--light-cream);
+	padding: 1rem;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+    max-width: 400px;
+    margin: auto;
+}
+
+.beer-image {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+
+.sticker {
+    display: none;
+	position: absolute;
+	z-index: 3;
+    width: 120px;
+}
+
+/* Wiersz "SINCE 2020" */
+.hero-since {
+  margin-top: .75rem;       /* lekki oddech pod tytułem */
+  margin-bottom: .25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: .9rem;         /* mobilnie mniejszy */
+  color: var(--text-cream); /* ten sam kolor co tytuł/tekst w hero */
+}
+
+@media (min-width: 992px) {
+  .hero-since {
+    font-size: 1rem;
+  }
+}
+
+/* === NOWA REGUŁA DLA BARDZO MAŁYCH EKRANÓW === */
+@media (max-width: 420px) {
+    .btn-custom {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* --- Style dla Desktopu --- */
+@media (min-width: 992px) {
+    .sticker {
+        display: block;
+    }
+
+    .hero-title {
+        font-size: 6.5rem;
+    }
+
+    .section-title {
+        font-size: 3rem; /* Zwiększamy tytuły sekcji na desktopie */
+    }
+
+	.hat-sticker {
+		top: -50px;
+		right: 0;
+		transform: rotate(15deg);
+		width: 140px;
+	}
+
+	.lucky-sticker {
+		bottom: -40px;
+		left: -30px;
+		transform: rotate(-10deg);
+		width: 200px;
+	}
+
+	.hop-sticker {
+		bottom: -50px;
+		right: -60px;
+		transform: rotate(-15deg);
+		width: 100px;
+	}
+}
+
+/* === PRZYWRÓCONE I POPRAWNE STYLE DLA INNYCH SEKCJI === */
+
+/* Style dla sekcji kontaktowej */
+.contact-section h3 {
+	font-family: 'Anton', sans-serif;
+	letter-spacing: 1.5px;
+	color: var(--dark-green);
+}
+
+.contact-section p {
+	color: #333;
+}
+
+.map-container {
+	border: 1px solid #e0e0e0;
+	padding: 8px;
+	background-color: white;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.map-container iframe {
+	width: 100%;
+	height: 450px;
+	display: block;
+}
+
+.opening-hours p {
+	display: flex;
+	justify-content: space-between;
+	max-width: 300px;
+	margin: 0.5rem auto 0.5rem 0;
+}
+
+@media (max-width: 991.98px) {
+    .opening-hours p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* Style dla sekcji menu */
+.menu-description {
+	font-size: 1.1rem;
+	color: #444;
+	margin-bottom: 2rem;
+}
+
+@media (min-width: 992px) {
+  html {
+    scroll-padding-top: var(--nav-offset-desktop);
+  }
+  section[id] {
+    scroll-margin-top: var(--nav-offset-desktop);
+  }
+}

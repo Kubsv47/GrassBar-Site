@@ -1,0 +1,81 @@
+
+.st-patricks-nav {
+  border-bottom: 1px solid rgba(230, 229, 211, 0.2);
+  background-color: var(--dark-green) !important;
+  padding-block: 0.1rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,.1);
+  
+}
+
+
+.navbar-logo {
+  height: 64px;       
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+@media (min-width: 576px) {
+  .navbar-logo { height: 82px; }  
+}
+
+@media (min-width: 992px) {
+  .navbar-logo { height: 88px; }  
+}
+
+
+.navbar-brand-custom,
+.nav-link-custom {
+  color: var(--text-cream) !important;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  transition: color 0.2s ease-in-out;
+  white-space: nowrap; 
+  padding: 0.5rem 1rem;
+}
+.navbar-brand-custom:hover,
+.nav-link-custom:hover {
+  color: var(--lucky-yellow) !important;
+}
+
+
+.st-patricks-nav .navbar-nav { flex-wrap: nowrap; }
+
+
+.navbar-right { flex-wrap: nowrap; }
+
+
+.social-icon {
+  color: var(--text-cream);
+  transition: color 0.2s ease-in-out;
+}
+.social-icon:hover { color: var(--lucky-yellow); }
+
+
+.navbar-toggler {
+  border-color: rgba(230, 229, 211, 0.5) !important;
+  position: relative;
+  z-index: 1071;
+}
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28240,240,225,0.9%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+.st-patricks-nav .navbar-collapse { z-index: 1060; }
+
+
+.lang-switcher-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: .25rem;
+}
+@media (min-width: 992px) {
+  .lang-switcher-wrap {
+    width: auto;
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+  .nav-link-custom { letter-spacing: 1.2px; }
+}

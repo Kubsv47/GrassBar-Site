@@ -1,0 +1,47 @@
+.match-card {
+  background-color: var(--light-cream);
+  color: var(--dark-green);
+  border: 3px solid var(--dark-green);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.2);
+  transition: transform .3s, box-shadow .3s;
+  height: 100%;
+}
+
+
+.match-card-body {
+  display: flex;
+  align-items: center;            
+  justify-content: space-between; 
+  gap: 1rem;
+}
+
+
+.match-card-body .team-info {
+  flex: 1 1 0;                    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.match-card-body .vs-text {
+  flex: 0 0 56px;                 
+  text-align: center;
+  line-height: 1;
+}
+
+
+.match-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  display: block;
+}
+.match-card:hover { transform: translateY(-5px); box-shadow: 8px 8px 20px rgba(0,0,0,0.3); }
+.match-card-header { border-bottom: 2px solid rgba(26,71,42,.2); padding-bottom: .5rem; font-weight: 700; }
+.match-logo { width: 60px; height: 60px; object-fit: contain; }
+.team-name { font-family: 'Anton', sans-serif; font-size: 1.1rem; margin-bottom: 0; line-height: 1.2; }
+.vs-text { font-family: 'Anton', sans-serif; font-size: 2rem; color: var(--dark-green); }
+.league-name { font-weight: 700; font-size: .8rem; letter-spacing: 1px; background-color: var(--dark-green); color: var(--light-cream); padding: .2rem .8rem; border-radius: 15px; }

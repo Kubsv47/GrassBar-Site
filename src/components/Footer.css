@@ -1,0 +1,39 @@
+.site-footer {
+  background: var(--dark-green);
+  color: var(--text-cream);
+}
+
+.footer-logo {
+  height: 88px;     
+  width: auto;
+  object-fit: contain;
+  display: inline-block;
+}
+
+
+.footer-link {
+  color: var(--text-cream);
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: .5px;
+  line-height: 1;
+}
+.footer-link:hover,
+.footer-link:focus {
+  color: var(--lucky-yellow);
+  text-decoration: none;
+}
+
+
+.footer-link-btn {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+.footer-divider {
+  color: rgba(240,240,225,.6);
+  user-select: none;
+}
